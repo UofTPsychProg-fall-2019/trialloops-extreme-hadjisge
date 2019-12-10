@@ -219,7 +219,9 @@ for i, stim in enumerate(stims):
 
 # summary
 avg_accuracy = (np.mean(out.loc[:,'correct']))*100
+print(avg_accuracy)
 avg_rt = np.mean(out.loc[:,'rt'])
+print(avg_rt)
 avg_accuracy_text = visual.TextStim(win, text=f"Average Accuracy: {avg_accuracy:.0f} [%]", color='white', pos=(0, 0), height=0.05)
 avg_rt_text = visual.TextStim(win, text=f"Average RT: {avg_rt:.3f} [s]", color='white', pos=(0, -.1), height=0.05)
 avg_accuracy_text.draw()
